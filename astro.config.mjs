@@ -12,10 +12,4 @@ export default defineConfig({
             enabled: true,
         },
     }),
-    vite: {
-        server: {
-            host: true,
-            allowedHosts: [process.env.HOST]
-        }
-    }
 });
