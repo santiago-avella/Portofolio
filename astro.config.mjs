@@ -1,5 +1,9 @@
 import { defineConfig } from 'astro/config';
 import node from '@astrojs/node';
+import * as dotenv from "dotenv";
+dotenv.config();
+
+console.log(process.env.HOST)
 
 export default defineConfig({
     output: 'server',
@@ -9,7 +13,7 @@ export default defineConfig({
     vite: {
         server: {
             host: true,
-            allowedHosts: ['5d0c2e6bb9d4.ngrok-free.app']
+            allowedHosts: [process.env.HOST]
         }
     }
 });
