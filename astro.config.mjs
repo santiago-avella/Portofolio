@@ -1,12 +1,12 @@
 import { defineConfig } from 'astro/config';
-import vercelServerless from '@astrojs/vercel/serverless';
+import vercelStatic from '@astrojs/vercel/static';
 import * as dotenv from "dotenv";
 
 dotenv.config();
 
 export default defineConfig({
-    output: 'server',
-    adapter: vercelServerless(),
+    output: 'static',
+    adapter: vercelStatic(),
     vite: {
         server: {
             host: true,
