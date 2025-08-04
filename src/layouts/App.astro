@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  pageTitle: string;
+}
+const { pageTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Avella | {pageTitle}</title>
+  </head>
+  
+  <body class="overflow-x-hidden static min-h-screen bg-conic-330 [background:radial-gradient(125%_125%_at_50%_30%,#001514_40%,#294936_100%)] ">
+    <slot/>
+  </body>
+</html>
