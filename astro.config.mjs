@@ -6,7 +6,12 @@ dotenv.config();
 
 export default defineConfig({
     output: 'server',
-    adapter: vercel(),
+    adapter: vercel({
+        imageService: true,
+        webAnalytics: {
+            enabled: true,
+        },
+    }),
     vite: {
         server: {
             host: true,
