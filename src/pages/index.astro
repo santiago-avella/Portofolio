@@ -56,14 +56,26 @@ const experiences = data as Experience[]
             <h2 class=" font-josefin font-semibold italic text-[180%] text-white">Experience</h2>
     
             <ol class="relative border-s leading-0 mt-8 border-lime-300">
-               {experiences?.map((experience) => (
+               <!--{experiences?.map((experience) => (
                     <li class="mb-10 last-of-type:mb-0 ms-4 p-3.5 bg-gradient-to-br from-greenCustom1 from-70% to-black/60 shadow-2xl shadow-greenCustom2/50 rounded-[8px] hover:hover:bg-gradient-to-br hover:from-white hover:to-lime-300 hover:to-95% group">
                         <div class="absolute w-3 h-3 bg-white rounded-full mt-1.5 -start-1.5 border-greenCustom2 group-hover:bg-lime-500"></div>
                         <time class="mb-1 text-[90%] font-josefin italic font-bold leading-none text-white group-hover:text-greenCustom1 ">{format(new Date(experience.initial_date), "MMM 'de' yyyy")} - {format(new Date(experience.ending_date), "MMM 'de' yyyy")}</time>
                         <h3 class="text-lg font-josefin mt-1.5 font-semibold text-lime-300 group-hover:text-lime-600">{experience.position} - {experience.company}</h3>
                         <p class="mb-4 text-[105%] font-josefin text-gray-300 group-hover:text-gray-950 leading-[170%]">{experience.description}</p>
                      </li>
-               ))}
+               ))}-->
+               <li class="mb-10 last-of-type:mb-0 ms-4 p-3.5 bg-gradient-to-br from-greenCustom1 from-70% to-black/60 shadow-2xl shadow-greenCustom2/50 rounded-[8px] hover:hover:bg-gradient-to-br hover:from-white hover:to-lime-300 hover:to-95% group">
+                        <div class="absolute w-3 h-3 bg-white rounded-full mt-1.5 -start-1.5 border-greenCustom2 group-hover:bg-lime-500"></div>
+                        <time class="mb-1 text-[90%] font-josefin italic font-bold leading-none text-white group-hover:text-greenCustom1 ">juny 2022 - juny 2023</time>
+                        <h3 class="text-lg font-josefin mt-1.5 font-semibold text-lime-300 group-hover:text-lime-600">Independent Web Developer - GCE College</h3>
+                        <p class="mb-4 text-[105%] font-josefin text-gray-300 group-hover:text-gray-950 leading-[170%]">Period as a freelance web developer, where I developed projects to strengthen companies' web presence: creation of landing pages, complete websites, responsive design, interactivity and animations, development of mockups and compact and user-friendly web design, infrastructure deployment, and SEO techniques. </p>
+                </li>
+               <li class="mb-10 last-of-type:mb-0 ms-4 p-3.5 bg-gradient-to-br from-greenCustom1 from-70% to-black/60 shadow-2xl shadow-greenCustom2/50 rounded-[8px] hover:hover:bg-gradient-to-br hover:from-white hover:to-lime-300 hover:to-95% group">
+                        <div class="absolute w-3 h-3 bg-white rounded-full mt-1.5 -start-1.5 border-greenCustom2 group-hover:bg-lime-500"></div>
+                        <time class="mb-1 text-[90%] font-josefin italic font-bold leading-none text-white group-hover:text-greenCustom1 ">august 2024 - july 2025</time>
+                        <h3 class="text-lg font-josefin mt-1.5 font-semibold text-lime-300 group-hover:text-lime-600">Software Developer - Ideapro Consultores</h3>
+                        <p class="mb-4 text-[105%] font-josefin text-gray-300 group-hover:text-gray-950 leading-[170%]">Performing various tasks, primarily developing software platforms to strengthen public sector processes. Software design, development cycle planning and process documentation, coding, testing, deployment, and devops processes. Generating customized solutions and supporting the different life cycles of a project.</p>
+                </li>
             </ol>
          </div>
    </section>
